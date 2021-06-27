@@ -18,9 +18,7 @@ new Vue(
                 indexImg : 0
             },
         created(){
-            setInterval(() =>{
-                this.next();
-            }, 3000)
+           
         },
         methods: {
             next:function () {
@@ -45,11 +43,26 @@ new Vue(
             },
             isCourentDot: function (index) {
                 if (index === this.indexImg) {
-                    return 'current'
+                    return 'current' 
+                    return indexImg
                 } else {
                     return ''
                 }
-            }
+            },
+
         }
     }
+    
  );
+let prezzo = 0
+ if (indexImg === 0) {
+     prezzo = 80
+ } else if (indexImg===1){
+     prezzo = 100
+ }else if (indexImg=== 2) {
+     prezzo = 60
+ } else {
+     prezzo = 40
+ }
+
+ document.getElementById("prezzo").innerHTML= prezzo + "$"
