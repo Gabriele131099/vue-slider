@@ -1,0 +1,27 @@
+img
+{
+    width: 100%;
+    height: 400px;
+}
+.arrow
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+.slider
+{
+    position: relative;
+}
+.slider-dots
+{
+    position: relative;
+    top: -100px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+.slider-dots .current
+{
+    color: brown;
+}
