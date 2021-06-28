@@ -18,7 +18,9 @@ new Vue(
                 indexImg : 0
             },
         created(){
-           
+           setInterval(() => {
+               this.next();
+           }, interval);
         },
         methods: {
             next:function () {
