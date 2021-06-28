@@ -16,7 +16,10 @@ img
     align-items: center;
     justify-content: center;
 }
-
+.arrow i:hover
+{
+    color: lightslategray;
+}
 .slider
 {
     position: relative;
@@ -42,4 +45,20 @@ img
 .nameSpa
 {
     text-align: center;
+}
+
+.button
+{
+    text-align: center;
+}
+.button button
+{
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+.button button:hover
+{
+    background-color: black;
+    color: white;
 }
