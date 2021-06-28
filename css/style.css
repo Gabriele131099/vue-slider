@@ -5,9 +5,11 @@ img
 }
 .arrow
 {
-    text-align: center;
     font-size: 40px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider
@@ -31,4 +33,8 @@ img
 .slider-dots .current
 {
     color: brown;
+}
+.nameSpa
+{
+    text-align: center;
 }
