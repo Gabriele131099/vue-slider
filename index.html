@@ -27,12 +27,12 @@
                             <i class="fas fa-arrow-left"></i>
                         </div>
                         <div class="col-8">
-                            <img :src="photos[indexImg]" alt="">
+                            <img :src="photos[indexImg].path" alt="">
                             <div class="slider-dots">
                                 <i 
                                 :class="isCourentDot(index)"
                                 v-for="(img,index) in photos" 
-                                class="fas fa-circle"
+                                class="fas fa-circle p-2"
                                 @click="moveTo(index)"
                                 >
                                 </i>
@@ -42,15 +42,20 @@
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
+                    <div>
+                        {{photos[indexImg].sale}} $ per notte di soggiorno
+                    </div>
+                    <div>
+                        {{photos[indexImg].description}}
+                    </div>
 
                 </div>
 
             </div>
         </picture>
-        <section>
-            <h1 id="prezzo">
-
-            </h1>
+        <section >
+            
+         
         </section>
     </main>
 

@@ -7,19 +7,26 @@ img
 {
     text-align: center;
     font-size: 40px;
+    cursor: pointer;
 }
 
 .slider
 {
     position: relative;
+    cursor: pointer;
+    
 }
 .slider-dots
 {
     position: relative;
-    top: -100px;
     text-align: center;
-    width: 100%;
+    width: 180px;
+    left: 50% ;
+    top: -20%;
     color: #fff;
+    background-color: rgba(2, 0, 0, 0.5);
+    transform: translate(-50% , -50%);
+    border-radius: 50px;
 }
 .slider-dots .current
 {
